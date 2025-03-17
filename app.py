@@ -8,7 +8,7 @@ def result():
     order_id = data.get('orderid')
     amount = data.get('amount')
     status = data.get('status')
-    if status == '1':  # Успешная оплата (для PaySera; уточните в документации)
+    if status == '1':
         print(f"Оплата {order_id} на {amount} RUB успешна!")
         return "OK", 200
     return "FAIL", 400
